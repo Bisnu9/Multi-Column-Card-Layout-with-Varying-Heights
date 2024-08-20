@@ -1,0 +1,117 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(151, 200, 219);
+}
+h1{
+    text-align: center;
+    margin-top: 5%;
+    font-style: italic;
+    color: rgb(167, 167, 75);
+}
+
+.container{
+   /* background-color: antiquewhite;*/
+    border-radius: 10px;
+    margin-top: 5%;
+   /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;*/
+}
+
+.top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    overflow: hidden;
+
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+}
+.box1{
+    width: 180px;
+    height: 140px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.box2{
+    width: 180px;
+    height: 120px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.box3{
+    width: 180px;
+    height: 190px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.box4{
+    width: 180px;
+    height: 190px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+.box5{
+    width: 180px;
+    height: 150px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.box6{
+    width: 180px;
+    height: 260px;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .top{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .bottom{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 18px;
+    }
+    .box1 .box2 .box3 .box4 .box5 .box6{
+       width: 100%;
+       max-width: 180px;
+    }
+}
